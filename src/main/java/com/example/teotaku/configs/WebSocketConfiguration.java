@@ -13,16 +13,16 @@ import java.util.concurrent.ConcurrentMap;
 
 
 @RequiredArgsConstructor
-@EnableWebSocket
+//@EnableWebSocket
 @Configuration
 public class WebSocketConfiguration implements WebSocketConfigurer {
 
 
 
-    private final WebSocketHandler webSocketHandler;
+//    private final WebSocketHandler webSocketHandler;
 
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
-        registry.addHandler(webSocketHandler, "/ws/chats");
+//        registry.addHandler(webSocketHandler, "/ws/chats");
     }
 }
